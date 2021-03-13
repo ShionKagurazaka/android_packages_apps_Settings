@@ -106,7 +106,11 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.READ_DREAM_STATE" />
     <uses-permission android:name="android.permission.READ_DREAM_SUPPRESSION" />
-
+        
+    <!-- Face Unlock -->
+    <uses-permission android:name="com.android.settings.FACE_UNLOCK"/>
+    <permission android:name="com.android.settings.FACE_UNLOCK" android:protectionLevel="signatureOrSystem"/>
+        
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher"
             android:theme="@style/Theme.Settings"
